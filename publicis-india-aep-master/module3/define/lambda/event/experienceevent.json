@@ -1,0 +1,45 @@
+{
+  "header": {
+    "datasetId": "5d8348b5a9847c16353145e3",
+    "imsOrgId": "D845731D5B30B6010A495E2E@AdobeOrg",
+    "source": {
+      "name": "Alexa"
+    },
+    "schemaRef": {
+      "id": "https://ns.adobe.com/publicisglobalemeaptrsd/schemas/c87f81d183699972ac42b7ed90bc8d78",
+      "contentType": "application/vnd.adobe.xed-full+json;version=1"
+    }
+  },
+  "body": {
+    "xdmMeta": {
+      "schemaRef": {
+        "id": "https://ns.adobe.com/publicisglobalemeaptrsd/schemas/c87f81d183699972ac42b7ed90bc8d78",
+        "contentType": "application/vnd.adobe.xed-full+json;version=1"
+      }
+    },
+    "xdmEntity": {
+      "_id": "{%%uniqueTimeStamp%%}",
+      "timestamp": "{%%formattedDate%%}:00Z",
+      "productListItems": [{"SKU": "{%%productName%%}"}],
+      "identityMap": {
+        "ECID": [
+          {
+            "id": "{%%mcid%%}",
+            "primary": true,
+            "authenticatedState": "authenticated"
+          }
+        ]
+      },
+      "_publicisglobalemeaptrsd": {
+        "productData": {
+          "productUrl": "{%%productImageUrl%%}",
+          "productName": "{%%productName%%}",
+          "productInteraction": "{%%productInteraction%%}"
+        },
+        "identification": {
+          "emailId": "{%%mcid%%}"
+        }
+      }
+    }
+  }
+}
